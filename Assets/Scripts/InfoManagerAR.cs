@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+
 public class InfoManagerAR : MonoBehaviour
 {
     public static InfoManagerAR instance;
@@ -9,20 +10,22 @@ public class InfoManagerAR : MonoBehaviour
     public TMP_Text _infoText;
 
     private MarkerInfo _currentMarker;
-    private bool panelOpen = false;
+    private bool panelOpen;
 
     private void Awake()
     {
         instance = this;
     }
 
+    // Called when ANY marker is tracked
     public void SetCurrentMarker(MarkerInfo marker)
     {
         _currentMarker = marker;
 
-        if(panelOpen)
+        // Update instantly if panel is open
+        if (panelOpen && _currentMarker != null)
         {
-            _infoText.text = marker.information;
+            _infoText.text = _currentMarker.information;
         }
     }
 
@@ -32,6 +35,7 @@ public class InfoManagerAR : MonoBehaviour
         {
             _currentMarker = null;
 
+            // optional: keep panel open but show message
             if (panelOpen)
             {
                 _infoText.text = "No marker detected";
@@ -39,29 +43,26 @@ public class InfoManagerAR : MonoBehaviour
         }
     }
 
-
+    // INFO BUTTON
     public void ShowInfo()
     {
-        if (_currentMarker == null)
-        {
-            _infoText.text = "No marker detected";
-        }
-        else
+        panelOpen = true;
+        _infoPanel.SetActive(true);
+
+        if (_currentMarker != null)
         {
             _infoText.text = _currentMarker.information;
         }
-
-        panelOpen = true;
-        _infoPanel.SetActive(true);
+        else
+        {
+            _infoText.text = "No marker detected";
+        }
     }
 
+    // CLOSE BUTTON
     public void CloseInfo()
     {
         panelOpen = false;
         _infoPanel.SetActive(false);
     }
-
-
-
-
 }

@@ -1340,8 +1340,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InfoManagerAR_ClearMarker_m43A04ACAB4235
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObserverBehaviour_remove_OnTargetStatusChanged_m6B5ABC6137D8E98EA690366D721D44C76C1FA08C (ObserverBehaviour_t5523404662BA53BE6118C49F6FFA9E19719115DB* __this, Action_2_tAC0AA9B652075EE1CE661500AC3373C7008D598F* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF (ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
@@ -1402,9 +1402,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ImageTargetTracker_OnStatusChanged_m8224
 	}
 	int32_t G_B3_0 = 0;
 	{
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/ImageTargetTracker.cs:19>
 		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/ImageTargetTracker.cs:20>
 		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/ImageTargetTracker.cs:21>
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/ImageTargetTracker.cs:22>
 		int32_t L_0;
 		L_0 = TargetStatus_get_Status_m6CA973C4D857DCA6B775DF7E053B0990A83026A3_inline((&___1_status), NULL);
 		if ((((int32_t)L_0) == ((int32_t)3)))
@@ -1426,14 +1426,14 @@ IL_0016:
 
 IL_0017:
 	{
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/ImageTargetTracker.cs:24>
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/ImageTargetTracker.cs:23>
 		if (!G_B3_0)
 		{
 			goto IL_002a;
 		}
 	}
 	{
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/ImageTargetTracker.cs:26>
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/ImageTargetTracker.cs:25>
 		InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB* L_2 = ((InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB_StaticFields*)il2cpp_codegen_static_fields_for(InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB_il2cpp_TypeInfo_var))->___instance;
 		MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA* L_3 = __this->____markerInfo;
 		NullCheck(L_2);
@@ -1443,12 +1443,12 @@ IL_0017:
 
 IL_002a:
 	{
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/ImageTargetTracker.cs:30>
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/ImageTargetTracker.cs:29>
 		InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB* L_4 = ((InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB_StaticFields*)il2cpp_codegen_static_fields_for(InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB_il2cpp_TypeInfo_var))->___instance;
 		MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA* L_5 = __this->____markerInfo;
 		NullCheck(L_4);
 		InfoManagerAR_ClearMarker_m43A04ACAB4235C1ABFB6743A57C0BAC8A46495C4(L_4, L_5, NULL);
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/ImageTargetTracker.cs:33>
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/ImageTargetTracker.cs:31>
 		return;
 	}
 }
@@ -1464,7 +1464,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ImageTargetTracker_OnDestroy_m5F36BDACF7
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/ImageTargetTracker.cs:37>
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/ImageTargetTracker.cs:35>
 		ObserverBehaviour_t5523404662BA53BE6118C49F6FFA9E19719115DB* L_0 = __this->____observer;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -1475,7 +1475,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ImageTargetTracker_OnDestroy_m5F36BDACF7
 		}
 	}
 	{
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/ImageTargetTracker.cs:39>
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/ImageTargetTracker.cs:37>
 		ObserverBehaviour_t5523404662BA53BE6118C49F6FFA9E19719115DB* L_2 = __this->____observer;
 		Action_2_tAC0AA9B652075EE1CE661500AC3373C7008D598F* L_3 = (Action_2_tAC0AA9B652075EE1CE661500AC3373C7008D598F*)il2cpp_codegen_object_new(Action_2_tAC0AA9B652075EE1CE661500AC3373C7008D598F_il2cpp_TypeInfo_var);
 		Action_2__ctor_mCE1D840FD103AC1247B1231CAB0A34B795A2978C(L_3, __this, (intptr_t)((void*)ImageTargetTracker_OnStatusChanged_m82240849811B87520D29710CFD52E437D680AE5E_RuntimeMethod_var), NULL);
@@ -1485,7 +1485,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ImageTargetTracker_OnDestroy_m5F36BDACF7
 
 IL_0025:
 	{
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/ImageTargetTracker.cs:41>
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/ImageTargetTracker.cs:39>
 		return;
 	}
 }
@@ -1515,107 +1515,61 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InfoManagerAR_Awake_m652D7E484515A5C83D4
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:16>
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:17>
 		((InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB_StaticFields*)il2cpp_codegen_static_fields_for(InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB_il2cpp_TypeInfo_var))->___instance = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&((InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB_StaticFields*)il2cpp_codegen_static_fields_for(InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB_il2cpp_TypeInfo_var))->___instance), (void*)__this);
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:17>
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:18>
 		return;
 	}
 }
 // Method Definition Index: 116229
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InfoManagerAR_SetCurrentMarker_m21F429AF61D4AC0CC9BBB8B524EBB9B5FCA390F8 (InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB* __this, MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA* ___0_marker, const RuntimeMethod* method) 
 {
-	{
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:21>
-		MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA* L_0 = ___0_marker;
-		__this->____currentMarker = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->____currentMarker), (void*)L_0);
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:23>
-		bool L_1 = __this->___panelOpen;
-		if (!L_1)
-		{
-			goto IL_0020;
-		}
-	}
-	{
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:25>
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_2 = __this->____infoText;
-		MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA* L_3 = ___0_marker;
-		NullCheck(L_3);
-		String_t* L_4 = L_3->___information;
-		NullCheck(L_2);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_2, L_4);
-	}
-
-IL_0020:
-	{
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:27>
-		return;
-	}
-}
-// Method Definition Index: 116230
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InfoManagerAR_ToggleInfo_m85B35B452424317CBF44418BEAE44819891912FC (InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB* __this, const RuntimeMethod* method) 
-{
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral613AC4B1EE7C32072E59D5053D494ABE847169C4);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:31>
-		bool L_0 = __this->___panelOpen;
-		__this->___panelOpen = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:33>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->____infoPanel;
-		bool L_2 = __this->___panelOpen;
-		NullCheck(L_1);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, L_2, NULL);
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:35>
-		bool L_3 = __this->___panelOpen;
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:23>
+		MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA* L_0 = ___0_marker;
+		__this->____currentMarker = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____currentMarker), (void*)L_0);
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:26>
+		bool L_1 = __this->___panelOpen;
+		if (!L_1)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA* L_2 = __this->____currentMarker;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_3)
 		{
-			goto IL_005d;
+			goto IL_0033;
 		}
 	}
 	{
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:37>
-		MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA* L_4 = __this->____currentMarker;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_5;
-		L_5 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_4, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_5)
-		{
-			goto IL_004d;
-		}
-	}
-	{
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:39>
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->____infoText;
-		MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA* L_7 = __this->____currentMarker;
-		NullCheck(L_7);
-		String_t* L_8 = L_7->___information;
-		NullCheck(L_6);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_6, L_8);
-		return;
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:28>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_4 = __this->____infoText;
+		MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA* L_5 = __this->____currentMarker;
+		NullCheck(L_5);
+		String_t* L_6 = L_5->___information;
+		NullCheck(L_4);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_4, L_6);
 	}
 
-IL_004d:
+IL_0033:
 	{
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:43>
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_9 = __this->____infoText;
-		NullCheck(L_9);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_9, _stringLiteral613AC4B1EE7C32072E59D5053D494ABE847169C4);
-	}
-
-IL_005d:
-	{
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:47>
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:30>
 		return;
 	}
 }
-// Method Definition Index: 116231
+// Method Definition Index: 116230
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InfoManagerAR_ClearMarker_m43A04ACAB4235C1ABFB6743A57C0BAC8A46495C4 (InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB* __this, MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA* ___0_marker, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1626,7 +1580,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InfoManagerAR_ClearMarker_m43A04ACAB4235
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:51>
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:34>
 		MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA* L_0 = __this->____currentMarker;
 		MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA* L_1 = ___0_marker;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -1638,10 +1592,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InfoManagerAR_ClearMarker_m43A04ACAB4235
 		}
 	}
 	{
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:53>
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:36>
 		__this->____currentMarker = (MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____currentMarker), (void*)(MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA*)NULL);
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:55>
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:39>
 		bool L_3 = __this->___panelOpen;
 		if (!L_3)
 		{
@@ -1649,7 +1603,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InfoManagerAR_ClearMarker_m43A04ACAB4235
 		}
 	}
 	{
-		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:57>
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:41>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_4 = __this->____infoText;
 		NullCheck(L_4);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_4, _stringLiteral613AC4B1EE7C32072E59D5053D494ABE847169C4);
@@ -1657,11 +1611,73 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InfoManagerAR_ClearMarker_m43A04ACAB4235
 
 IL_002d:
 	{
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:44>
+		return;
+	}
+}
+// Method Definition Index: 116231
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InfoManagerAR_ShowInfo_m8876DC265E9900334DA41E2C9DBE7CE3D45939FC (InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral613AC4B1EE7C32072E59D5053D494ABE847169C4);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:49>
+		__this->___panelOpen = (bool)1;
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:50>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->____infoPanel;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:52>
+		MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA* L_1 = __this->____currentMarker;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:54>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_3 = __this->____infoText;
+		MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA* L_4 = __this->____currentMarker;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___information;
+		NullCheck(L_3);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_3, L_5);
+		return;
+	}
+
+IL_0038:
+	{
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:58>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->____infoText;
+		NullCheck(L_6);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_6, _stringLiteral613AC4B1EE7C32072E59D5053D494ABE847169C4);
 		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:60>
 		return;
 	}
 }
 // Method Definition Index: 116232
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InfoManagerAR_CloseInfo_mD926010783512781D88C7923C1F538E8CF68F111 (InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:65>
+		__this->___panelOpen = (bool)0;
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:66>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->____infoPanel;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
+		//<source_info:E:/Unity_Projects/AR_Vuforia/Assets/Scripts/InfoManagerAR.cs:67>
+		return;
+	}
+}
+// Method Definition Index: 116233
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InfoManagerAR__ctor_m203B2F8DE6AC6A219CF29A5C798C06D904FE30DD (InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1677,7 +1693,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InfoManagerAR__ctor_m203B2F8DE6AC6A219CF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 116233
+// Method Definition Index: 116234
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerInfo__ctor_m6417A4D8F5A3DE19B9711333CAD8F79164258E59 (MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1693,7 +1709,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerInfo__ctor_m6417A4D8F5A3DE19B97113
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 116234
+// Method Definition Index: 116235
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1709,7 +1725,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A90
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 116235
+// Method Definition Index: 116236
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1725,7 +1741,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Section__ctor_m5F732533E4DFC0167D965E5F5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 116236
+// Method Definition Index: 116237
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* VuforiaLicense_GetLicenseKey_m796D51E5EF1C53F3D62BA4EA8806AC1FB1A5E3C4 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1739,7 +1755,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* VuforiaLicense_GetLicenseKey_m796D5
 		return _stringLiteral51240515F89AE72BF914749B15BA805EBAE91750;
 	}
 }
-// Method Definition Index: 116237
+// Method Definition Index: 116238
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VuforiaLicense__ctor_m094B92B3323DFFD79ADB696474D5D158C95E291B (VuforiaLicense_t558A3A93186A45EF8A9401D2262B52B5593182BC* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1755,7 +1771,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VuforiaLicense__ctor_m094B92B3323DFFD79A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 116238
+// Method Definition Index: 116239
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1789,7 +1805,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC
 		return L_6;
 	}
 }
-// Method Definition Index: 116239
+// Method Definition Index: 116240
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
 {
 	{

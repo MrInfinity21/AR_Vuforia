@@ -13,8 +13,9 @@ extern void ImageTargetTracker_OnDestroy_m5F36BDACF7E25EC0CFB7BFBB872AD6142CFCCC
 extern void ImageTargetTracker__ctor_mFBDE265126513A2FFBCC5E8BFF04D859BF56B2F9 (void);
 extern void InfoManagerAR_Awake_m652D7E484515A5C83D479DB3E56425BCF7CB2120 (void);
 extern void InfoManagerAR_SetCurrentMarker_m21F429AF61D4AC0CC9BBB8B524EBB9B5FCA390F8 (void);
-extern void InfoManagerAR_ToggleInfo_m85B35B452424317CBF44418BEAE44819891912FC (void);
 extern void InfoManagerAR_ClearMarker_m43A04ACAB4235C1ABFB6743A57C0BAC8A46495C4 (void);
+extern void InfoManagerAR_ShowInfo_m8876DC265E9900334DA41E2C9DBE7CE3D45939FC (void);
+extern void InfoManagerAR_CloseInfo_mD926010783512781D88C7923C1F538E8CF68F111 (void);
 extern void InfoManagerAR__ctor_m203B2F8DE6AC6A219CF29A5C798C06D904FE30DD (void);
 extern void MarkerInfo__ctor_m6417A4D8F5A3DE19B9711333CAD8F79164258E59 (void);
 extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
@@ -23,7 +24,7 @@ extern void VuforiaLicense_GetLicenseKey_m796D51E5EF1C53F3D62BA4EA8806AC1FB1A5E3
 extern void VuforiaLicense__ctor_m094B92B3323DFFD79ADB696474D5D158C95E291B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[16] = 
+static Il2CppMethodPointer s_methodPointers[17] = 
 {
 	ImageTargetTracker_Start_m21832C69132387A62C16371B4CC2BF444E0D4D32,
 	ImageTargetTracker_OnStatusChanged_m82240849811B87520D29710CFD52E437D680AE5E,
@@ -31,8 +32,9 @@ static Il2CppMethodPointer s_methodPointers[16] =
 	ImageTargetTracker__ctor_mFBDE265126513A2FFBCC5E8BFF04D859BF56B2F9,
 	InfoManagerAR_Awake_m652D7E484515A5C83D479DB3E56425BCF7CB2120,
 	InfoManagerAR_SetCurrentMarker_m21F429AF61D4AC0CC9BBB8B524EBB9B5FCA390F8,
-	InfoManagerAR_ToggleInfo_m85B35B452424317CBF44418BEAE44819891912FC,
 	InfoManagerAR_ClearMarker_m43A04ACAB4235C1ABFB6743A57C0BAC8A46495C4,
+	InfoManagerAR_ShowInfo_m8876DC265E9900334DA41E2C9DBE7CE3D45939FC,
+	InfoManagerAR_CloseInfo_mD926010783512781D88C7923C1F538E8CF68F111,
 	InfoManagerAR__ctor_m203B2F8DE6AC6A219CF29A5C798C06D904FE30DD,
 	MarkerInfo__ctor_m6417A4D8F5A3DE19B9711333CAD8F79164258E59,
 	Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6,
@@ -42,7 +44,7 @@ static Il2CppMethodPointer s_methodPointers[16] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[16] = 
+static const int32_t s_InvokerIndices[17] = 
 {
 	18432,
 	7136,
@@ -50,8 +52,9 @@ static const int32_t s_InvokerIndices[16] =
 	18432,
 	18432,
 	14004,
-	18432,
 	14004,
+	18432,
+	18432,
 	18432,
 	18432,
 	18432,
@@ -65,7 +68,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	16,
+	17,
 	s_methodPointers,
 	0,
 	NULL,

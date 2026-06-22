@@ -14,14 +14,13 @@ public class ImageTargetTracker : MonoBehaviour
         _observer.OnTargetStatusChanged += OnStatusChanged;
     }
 
-  
     private void OnStatusChanged(ObserverBehaviour behaviour, TargetStatus status)
     {
-        bool isTracked =
+        bool tracked =
             status.Status == Status.TRACKED ||
             status.Status == Status.EXTENDED_TRACKED;
 
-        if (isTracked)
+        if (tracked)
         {
             InfoManagerAR.instance.SetCurrentMarker(_markerInfo);
         }
@@ -29,7 +28,6 @@ public class ImageTargetTracker : MonoBehaviour
         {
             InfoManagerAR.instance.ClearMarker(_markerInfo);
         }
-        
     }
 
     private void OnDestroy()
