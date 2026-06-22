@@ -2,15 +2,6 @@ using UnityEngine;
 
 public class MarkerInfo : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [TextArea(5, 10)]
+    public string information;
 }
