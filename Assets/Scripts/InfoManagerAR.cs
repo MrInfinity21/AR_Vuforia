@@ -5,11 +5,11 @@ public class InfoManagerAR : MonoBehaviour
 {
     public static InfoManagerAR instance;
 
-    [Header("UI")]
-    public GameObject _infoPanel;
-    public TMP_Text _infoText;
+    [Header("UI (Info Canvas ONLY)")]
+    public GameObject infoPanel;
+    public TMP_Text infoText;
 
-    private MarkerInfo _currentMarker;
+    private MarkerInfo currentMarker;
     private bool panelOpen;
 
     private void Awake()
@@ -17,52 +17,52 @@ public class InfoManagerAR : MonoBehaviour
         instance = this;
     }
 
-    // Called when ANY marker is tracked
+    // Called when marker is detected
     public void SetCurrentMarker(MarkerInfo marker)
     {
-        _currentMarker = marker;
+        currentMarker = marker;
 
-        // Update instantly if panel is open
-        if (panelOpen && _currentMarker != null)
+        // Auto update if panel is open
+        if (panelOpen && currentMarker != null)
         {
-            _infoText.text = _currentMarker.information;
+            infoText.text = currentMarker.information;
         }
     }
 
+    // Called when marker lost
     public void ClearMarker(MarkerInfo marker)
     {
-        if (_currentMarker == marker)
+        if (currentMarker == marker)
         {
-            _currentMarker = null;
+            currentMarker = null;
 
-            // optional: keep panel open but show message
             if (panelOpen)
             {
-                _infoText.text = "No marker detected";
+                infoText.text = "No marker detected";
             }
         }
     }
 
-    // INFO BUTTON
+    // BUTTON: Show Info (DOES NOT TOUCH CANVAS)
     public void ShowInfo()
     {
         panelOpen = true;
-        _infoPanel.SetActive(true);
+        infoPanel.SetActive(true);
 
-        if (_currentMarker != null)
+        if (currentMarker != null)
         {
-            _infoText.text = _currentMarker.information;
+            infoText.text = currentMarker.information;
         }
         else
         {
-            _infoText.text = "No marker detected";
+            infoText.text = "No marker detected";
         }
     }
 
-    // CLOSE BUTTON
+    // BUTTON: Close Info
     public void CloseInfo()
     {
         panelOpen = false;
-        _infoPanel.SetActive(false);
+        infoPanel.SetActive(false);
     }
 }

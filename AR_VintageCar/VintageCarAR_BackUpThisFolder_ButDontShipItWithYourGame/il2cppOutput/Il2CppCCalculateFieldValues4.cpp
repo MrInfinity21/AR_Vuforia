@@ -22561,9 +22561,9 @@ struct ImageTargetTracker_t0219499EA7A8EB2B946ADC1725F63676F5586417  : public Mo
 };
 struct InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____infoPanel;
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ____infoText;
-	MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA* ____currentMarker;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___infoPanel;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___infoText;
+	MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA* ___currentMarker;
 	bool ___panelOpen;
 };
 struct InstanceCullingBatcher_tF7D6B377AB7FA3912737949C058C08068D1E1A16  : public RuntimeObject
@@ -31344,7 +31344,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable14777[2] =
 	static_cast<int32_t>(offsetof(ImageTargetTracker_t0219499EA7A8EB2B946ADC1725F63676F5586417, ____observer)),static_cast<int32_t>(offsetof(ImageTargetTracker_t0219499EA7A8EB2B946ADC1725F63676F5586417, ____markerInfo)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable14778[5] = 
 {
-	static_cast<int32_t>(offsetof(InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB_StaticFields, ___instance)),static_cast<int32_t>(offsetof(InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB, ____infoPanel)),static_cast<int32_t>(offsetof(InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB, ____infoText)),static_cast<int32_t>(offsetof(InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB, ____currentMarker)),static_cast<int32_t>(offsetof(InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB, ___panelOpen)),};
+	static_cast<int32_t>(offsetof(InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB_StaticFields, ___instance)),static_cast<int32_t>(offsetof(InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB, ___infoPanel)),static_cast<int32_t>(offsetof(InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB, ___infoText)),static_cast<int32_t>(offsetof(InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB, ___currentMarker)),static_cast<int32_t>(offsetof(InfoManagerAR_t9FC210D617F106DEB55DB9F7584A2251EB27DAFB, ___panelOpen)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable14779[1] = 
 {
 	static_cast<int32_t>(offsetof(MarkerInfo_tA7AAEAC79C79448F66ED613120D6995C260D05AA, ___information)),};
