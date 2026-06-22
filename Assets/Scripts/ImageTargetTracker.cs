@@ -3,15 +3,15 @@ using Vuforia;
 
 public class ImageTargetTracker : MonoBehaviour
 {
-    private ObserverBehaviour _observer;
-    private MarkerInfo _markerInfo;
+    private ObserverBehaviour observer;
+    private MarkerInfo markerInfo;
 
     private void Start()
     {
-        _observer = GetComponent<ObserverBehaviour>();
-        _markerInfo = GetComponent<MarkerInfo>();
+        observer = GetComponent<ObserverBehaviour>();
+        markerInfo = GetComponent<MarkerInfo>();
 
-        _observer.OnTargetStatusChanged += OnStatusChanged;
+        observer.OnTargetStatusChanged += OnStatusChanged;
     }
 
     private void OnStatusChanged(ObserverBehaviour behaviour, TargetStatus status)
@@ -22,19 +22,19 @@ public class ImageTargetTracker : MonoBehaviour
 
         if (tracked)
         {
-            InfoManagerAR.instance.SetCurrentMarker(_markerInfo);
+            InfoManagerAR.instance.SetCurrentMarker(markerInfo);
         }
         else
         {
-            InfoManagerAR.instance.ClearMarker(_markerInfo);
+            InfoManagerAR.instance.ClearMarker(markerInfo);
         }
     }
 
     private void OnDestroy()
     {
-        if (_observer != null)
+        if (observer != null)
         {
-            _observer.OnTargetStatusChanged -= OnStatusChanged;
+            observer.OnTargetStatusChanged -= OnStatusChanged;
         }
     }
 }

@@ -5,12 +5,11 @@ public class InfoManagerAR : MonoBehaviour
 {
     public static InfoManagerAR instance;
 
-    [Header("UI (Info Canvas ONLY)")]
+    [Header("UI")]
     public GameObject infoPanel;
     public TMP_Text infoText;
 
     private MarkerInfo currentMarker;
-    private bool panelOpen;
 
     private void Awake()
     {
@@ -21,32 +20,20 @@ public class InfoManagerAR : MonoBehaviour
     public void SetCurrentMarker(MarkerInfo marker)
     {
         currentMarker = marker;
-
-        // Auto update if panel is open
-        if (panelOpen && currentMarker != null)
-        {
-            infoText.text = currentMarker.information;
-        }
     }
 
-    // Called when marker lost
+    // Called when marker is lost
     public void ClearMarker(MarkerInfo marker)
     {
         if (currentMarker == marker)
         {
             currentMarker = null;
-
-            if (panelOpen)
-            {
-                infoText.text = "No marker detected";
-            }
         }
     }
 
-    // BUTTON: Show Info (DOES NOT TOUCH CANVAS)
+    //  INFO BUTTON (OPEN ONLY)
     public void ShowInfo()
     {
-        panelOpen = true;
         infoPanel.SetActive(true);
 
         if (currentMarker != null)
@@ -59,10 +46,9 @@ public class InfoManagerAR : MonoBehaviour
         }
     }
 
-    // BUTTON: Close Info
+    //  CLOSE BUTTON
     public void CloseInfo()
     {
-        panelOpen = false;
         infoPanel.SetActive(false);
     }
 }
